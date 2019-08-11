@@ -4,7 +4,7 @@ services:
   zentao:
     image: jefferlau/zentao:11.6
     build: .
-    restart: "no"
+    restart: always
     container_name: zentao
     ports:
       - "80:80"

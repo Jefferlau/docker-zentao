@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  zentao:
+    image: jefferlau/zentao:11.6
+    build: .
+    restart: "no"
+    container_name: zentao
+    ports:
+      - "80:80"
+    volumes:
+      - ~/docker/zentao/www:/app/zentaopms
+      - ~/docker/zentao/data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456

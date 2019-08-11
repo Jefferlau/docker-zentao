@@ -14,6 +14,7 @@
 docker-compose 方式启动
 
 ```bash
+docker-compose pull
 # 后台启动
 docker-compose up -d
 # 停止
